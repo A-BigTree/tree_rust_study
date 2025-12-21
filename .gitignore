@@ -19,3 +19,12 @@ Cargo.lock
 /target
 
 /.idea
+
+**/.idea
+
+**/target
+**/debug
+
+.DS_Store
+
+**/Cargo.lock
