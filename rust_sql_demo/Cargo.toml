@@ -4,15 +4,5 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-#rbatis依赖
-rbs = { version = "4.6"}
-rbatis = { version = "4.6"}
-rbdc-sqlite = { version = "4.6" }
-#rbdc-mysql={version="4.6"}
-#rbdc-pg={version="4.6"}
-#rbdc-mssql={version="4.6"}
-
-serde = { version = "1", features = ["derive"] }
-tokio = { version = "1", features = ["full"] }
-log = "0.4"
-fast_log = "1.6"
+diesel = { version = "2.3.0", features = ["sqlite", "returning_clauses_for_sqlite_3_35"] }
+dotenvy = "0.15"
